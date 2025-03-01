@@ -7,6 +7,15 @@
 </head>
 <body>
     <h1>Friends Name</h1>
-    <div id="Friends-card"></div>
+    <div id="friends-card"></div>
+    <script>
+        const friends=[
+            "kartik","nikhil","sumit","prashant","anand",
+        ];
+        const friendscard=document.getElementById("friends-card");
+        for(i=0; i<friends.length; i++){
+        friendscard.innerHTML+=`<div class="friends-card">${friends[i]}</div>`;
+        }
+    </script>
 </body>
 </html>
